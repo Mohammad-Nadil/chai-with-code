@@ -1,6 +1,6 @@
 import express from "express";
 import cors from "cors";
-import { CORS } from "./constants";
+import { CORS } from "./constants.js";
 
 const app = express();
 
@@ -13,3 +13,5 @@ app.use(
         credentials: true,
     })
 );
+
+export {app}

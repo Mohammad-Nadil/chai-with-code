@@ -73,15 +73,3 @@ userSchema.methods.generateAccessToken = function () {
 };
 
 export const User = mongoose.model("User", userSchema);
-
-// PS C:\Users\user\OneDrive\Desktop\chai with code> npm i mongoose-aggregate-paginate-v2
-// npm error code ETIMEDOUT
-// npm error errno ETIMEDOUT
-// npm error network request to https://registry.npmjs.org/mongoose-aggregate-paginate-v2 failed, reason:
-// npm error network This is a problem related to network connectivity.
-// npm error network In most cases you are behind a proxy or have bad network settings.
-// npm error network
-// npm error network If you are behind a proxy, please make sure that the
-// npm error network 'proxy' config is set properly.  See: 'npm help config'
-// npm error A complete log of this run can be found in: C:\Users\user\AppData\Local\npm-cache\_logs\2025-02-27T09_13_44_752Z-debug-0.log
-// PS C:\Users\user\OneDrive\Desktop\chai with code> 

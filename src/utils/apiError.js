@@ -3,13 +3,16 @@ class apiError extends Error {
         super(message);
         this.status = status;
         this.stack = stack;
+        this.success = false
         this.code = code
 
         if(stack){
             this.stack = stack
         }else{
-            this.stack = this.stack
+           Error.captureStackTrace(this , this.constructor)
         }
         
     }
 }
+
+export {apiError}

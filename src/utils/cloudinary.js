@@ -5,7 +5,6 @@ import {
     CLOUDINARY_API_KEY,
     CLOUDINARY_API_SECRET,
 } from "../constants.js";
-import exp from "constants";
 
 cloudinary.config({
     cloud_name: CLOUDINARY_CLOUD_NAME,

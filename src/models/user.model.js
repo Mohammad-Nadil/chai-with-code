@@ -50,8 +50,6 @@ userSchema.pre("save", async function (next) {
 });
 
 userSchema.methods.isPasswordCorrected = async function (password) {
-    console.log("Provided password:", password);
-    console.log("Stored password:", this.password);
 
     if (!password || !this.password) {
         throw new Error("Password or hashed password is missing");
